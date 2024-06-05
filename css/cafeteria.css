@@ -1,4 +1,7 @@
-/* Zerar as margens de todos os elementos da página.
+
+/* Importando as fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+/* Zerando todas as margens de todos os elementos da página.
    Margens externas e internas */
 *{
     margin: 0px;
@@ -6,13 +9,86 @@
     box-sizing: border-box;
 }
 
-/* Vamos adicionar uma imagem a fundo do Header */
+
+/* --- Inicio do cabeçario ---*/
+/* Vamos arrumar Header(Cabeçario) */
 header{
     background-image: url("../img/cafeteria2.jpg");
-    height: 420px;
+    /* Ajustando o tamanho da imagem em 100% de largura */
+    background-size: 100%;
+    /* Ajustando a posição da imagem em x e y */
+    background-position: 0px -368px;
+    /* Ajustando altura da imgem */
+    height: 500px;
+    /* margem interna do elemento */
+    padding: 30px;
+}
+nav{
+    /* Tornando o conteudo da nav flexivel isso permite que
+    os elementos fiquem um ao lado do outro */
+    display: flex;
+    /* Alinhamento vertical dos elementos que estão no nav */
+    align-items: center;
+}
+/* Mexendo no Titulo */
+h1{
+    /* Mudando a cor */
+    color: whitesmoke;
+    /* Alterando o tipo de letra */
+    font-family:Arial, Helvetica, sans-serif;
+    /* Alterando o Tamanho do Titulo */
+    font-size:  33pt;
+    /* alterando o tamanho da caixa(Alta ou Baixa) */
+    text-transform: capitalize;
+    margin-right: 140px;
+}
+/* Mexendo e formatando a Lista */
+ul{
+    /* Retirando o marcador da lista */
+    list-style: none;
+}
+header ul li{
+    /* vamos ajustar a disposição(display) dos itens
+    da lista em formato de linha */
+    display: inline-block;
+    /* Adicionando margem aos elementos da lista */
+    margin-left: 1.5px;
+    margin-right: 1.5px;
+    padding: 6px;
+}
+header ul li:hover{
+    background-color: #3e2723;
+}
+header ul li a{
+    color: whitesmoke;
+    /* retirando o underline(sublinhado) */
+    text-decoration: none;
+    /* Alterando a fonte */
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 160px;
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-shadow: 5px 10px 5px #3e2723;
+}
+/* --- Fim do cabeçario --- */
+
+main{
+    background-image: url("../img/café.jpg");
+    /* Ajustando o tamanho da imagem em 100% de largura */
+    background-size: 100%;
+    /* Ajustando altura da imgem */
+    height: 1000px;
+    /* Alterando a opacidade da foto */
+    opacity: 0.90;
 }
 
 
-h1{
-    color: whitesmoke;
+footer{
+    background-color: black;
+    height: 300px;
 }
