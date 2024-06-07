@@ -1,6 +1,7 @@
 
 /* Importando as fontes do Google */
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 /* Zerando todas as margens de todos os elementos da página.
    Margens externas e internas */
 *{
@@ -17,12 +18,13 @@ header{
     /* Ajustando o tamanho da imagem em 100% de largura */
     background-size: 100%;
     /* Ajustando a posição da imagem em x e y */
-    background-position: 0px -368px;
+    background-position: 0px -179px;
     /* Ajustando altura da imgem */
-    height: 500px;
+    height: 800px;
     /* margem interna do elemento */
     padding: 30px;
 }
+
 nav{
     /* Tornando o conteudo da nav flexivel isso permite que
     os elementos fiquem um ao lado do outro */
@@ -58,6 +60,8 @@ header ul li{
 }
 header ul li:hover{
     background-color: #3e2723;
+    transition: 1s;
+    border-radius: 10px;
 }
 header ul li a{
     color: whitesmoke;
@@ -69,11 +73,20 @@ header ul li a{
 h2{
     color: whitesmoke;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 260px;
     font-family: "Anton", sans-serif;
     font-weight: 300;
     font-style: normal;
     text-shadow: 5px 10px 5px #3e2723;
+    font-size: 40pt;
+}
+header p{
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 21pt;
+    color: black;
+    align-items: center;
+    margin-left: 180px;
+    margin-right: 180px;
 }
 /* --- Fim do cabeçario --- */
 
@@ -85,10 +98,26 @@ main{
     height: 1000px;
     /* Alterando a opacidade da foto */
     opacity: 0.90;
+    border-top: 6px solid black;
 }
-
 
 footer{
     background-color: black;
     height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    font-family: "Arial";
+    font-size: 13pt;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+footer #end{
+    color: white;
+
+}
+footer #rede li{
+    display: inline-block;
+    margin-right: 10px;
 }
