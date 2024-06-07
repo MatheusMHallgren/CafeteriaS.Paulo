@@ -61,7 +61,7 @@ header ul li{
 header ul li:hover{
     background-color: #3e2723;
     transition: 1s;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 header ul li a{
     color: whitesmoke;
@@ -98,7 +98,7 @@ main{
     height: 1000px;
     /* Alterando a opacidade da foto */
     opacity: 0.90;
-    border-top: 6px solid black;
+    border-top: 7px solid black;
 }
 
 footer{
