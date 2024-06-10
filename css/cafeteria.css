@@ -119,12 +119,15 @@ main{
     /* Alterando a opacidade da foto */
     opacity: 0.90;
     background-size: 100%;
+    background-position: 0px 100px; 
+    background-repeat: no-repeat;
 }
 main h2{
     font-family: "Arial";
-    margin: 20px;
+    margin: 16px;
     font-size: 50pt;
     color: whitesmoke;
+    padding: 20px;
 }
 main #home p{
     font-family: "Arial";
@@ -150,15 +153,50 @@ main #imghome img{
     o comando opacity que varia entre 0 e 1, ou seja, se você aplicar
     0.6, significa que está usando 60% de opacidade. Isto representa 60%
     de visibilidade */
-    opacity: 0.6;
+    opacity: 0.8;
     /* O comando transtion pode realizar uma animação de transição,
     que você pode configurar o tipo de transição e o tempo da transição */
     transition: ease 1s;
 }
 main #imghome img:hover{
     opacity: 1;
-    border-radius: 35px;
+    border-radius: 45px;
 }
 main #imghome{
     text-align: center;
+}
+/* Formatação da página cardapio */
+
+main #categoriacardapio{
+    width: 80%;
+    /* Vamos centralizar a caixa categoria modificando a margem da esquerda
+    e da direita com auto de automatico */
+    margin-left: auto;
+    margin-right: auto;
+    /* aplicar a disposição flex para deixar as imagens uma ao lado da outra */
+    display: flex;
+    /* alinhar o conteudo ao centro */
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+}
+.itemcardapio img{
+    /* Tamanho das imagens */
+    width: 250px;
+    height: 250px;
+    /* arredondando os cantos */
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 10px;
+    opacity: 1;
+}
+.itemcardapio{
+    text-align: center;
+    margin: 20px;
+
+}
+.itemcardapio a{
+    font-family: "Arial";
+    text-decoration: none;
+    color: whitesmoke;
 }
