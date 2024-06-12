@@ -232,5 +232,28 @@ main #categoriacardapio{
     line-height: 15pt;
 }
 
-
+/* -------Página quem somos--------- */
+main p{
+    font-family: "Arial";
+    font-size: 13pt;
+    line-height: 20pt;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+}
+#video{
+    text-align: center;
+}
+#video iframe{
+    width: 80%;
+    height: 630px;
+    margin: 50px;
+}
+#h1quemsomos{
+padding-top: 30px;
+text-align: center;
+margin: 0;
+}
 
