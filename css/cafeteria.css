@@ -10,6 +10,9 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 /* --- Inicio do cabeçario ---*/
 /* Vamos arrumar Header(Cabeçario) */
@@ -118,9 +121,10 @@ main{
     background-image: url("../img/café.jpg");
     /* Alterando a opacidade da foto */
     opacity: 0.90;
-    background-size: 100%;
-    background-position: 0px 100px; 
+    background-size: 220%;
+    background-position: 0px -179px; 
     background-repeat: no-repeat;
+    border-top:1px solid white;
 }
 main h2{
     font-family: "Arial";
@@ -200,3 +204,33 @@ main #categoriacardapio{
     text-decoration: none;
     color: whitesmoke;
 }
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+.item{
+    display: flex;
+    color: white;
+    width: 32%;
+    margin: 10px;
+}
+.item img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.text{
+    display: block;
+}
+.text{
+    display: block;
+    margin: 5px;
+    font-family: "Arial";
+    font-size: 10pt;
+    line-height: 15pt;
+}
+
+
+
