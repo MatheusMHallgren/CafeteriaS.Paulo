@@ -260,6 +260,7 @@ margin: 0;
     text-align: center;
 }
 #mapa iframe{
+    border-radius: 20px;
     width: 80%;
     height: 600px;
     margin: 50px;
@@ -270,7 +271,8 @@ margin: 0;
     height: 100px;
 }
 form{
-    border: 4px solid white;
+    background-color: white;
+    /* border: 4px solid #3e2723; */
     border-radius: 10px;
     width: 40%;
     height: 500px;
@@ -295,7 +297,7 @@ select{
     border: 0;
     /* Reira a borda ativa do input */
     outline: none;
-    border-bottom: 2px dotted white;
+    border-bottom: 2px dotted #3e2723;
     /* dashed outros formatos de linha */
 }
 textarea{
@@ -304,13 +306,14 @@ textarea{
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    outline-color: greenyellow;
+    outline-color: #3e2723;
     resize: none;
     margin: 10px;
 }
 #textinput{
-    color: white;
+    color: #3e2723;
     font-family: "Arial";
+    display: block;
 }
 input[type=submit]{
     padding: 10px 40px;
@@ -320,4 +323,19 @@ input[type=submit]{
     cursor: pointer;
     display: block;
     margin: 10px auto 50px auto;
+    border-radius: 10PX;
+}
+input[type=checkbox]{
+text-align: center;
+}
+/* Formatação para o contato Whatsapp */
+#whatsapp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+}
+#whatsapp img{
+    width: 105%;
 }
