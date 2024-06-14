@@ -121,10 +121,10 @@ main{
     background-image: url("../img/café.jpg");
     /* Alterando a opacidade da foto */
     opacity: 0.90;
-    background-size: 100%;
+    background-size: cover;
     background-position: 0px 0px; 
     /* background-repeat: no-repeat; */
-    border-top:1px solid white;
+    border-top:3px solid white;
 }
 main h2{
     font-family: "Arial";
@@ -265,3 +265,59 @@ margin: 0;
     margin: 50px;
 }
 
+/* --------CONTATO-------- */
+#separador{
+    height: 100px;
+}
+form{
+    border: 4px solid white;
+    border-radius: 10px;
+    width: 40%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    padding: 10px;
+    box-shadow: 0px 20px 5px silver;
+}
+input[type=text],
+input[type=tel],
+input[type=email],
+select{
+    display: block;
+    width: 90%;
+    padding: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4.5px;
+    /* border-radius: 15px; */
+    background: none;
+    border: 0;
+    /* Reira a borda ativa do input */
+    outline: none;
+    border-bottom: 2px dotted white;
+    /* dashed outros formatos de linha */
+}
+textarea{
+    width: 90%;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    outline-color: greenyellow;
+    resize: none;
+    margin: 10px;
+}
+#textinput{
+    color: white;
+    font-family: "Arial";
+}
+input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    background-color: #3e2723;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 50px auto;
+}
