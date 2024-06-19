@@ -337,3 +337,55 @@ text-align: center;
 #whatsapp img{
     width: 105%;
 }
+/* ##### Aplicação dos breakpoints ##### */
+/* ------------------Breakpoints para o layout------------------- */
+@media(min-width:0px) and (max-width: 575px){
+
+    header{
+        background-image: url("../img/cafeteria2.jpg");
+        /* Ajustando o tamanho da imagem em 100% de largura */
+        background-size: cover;
+        /* Ajustando a posição da imagem em x e y */
+        background-position: 0px 0px;
+        /* Ajustando altura da imgem */
+        height: 300px;
+        /* margem interna do elemento */
+        padding: 5px;
+        background-repeat: no-repeat;
+    }
+    nav{
+        /* Tornando o conteudo da nav flexivel isso permite que
+        os elementos fiquem um ao lado do outro */
+        display: flex;
+        /* Alinhamento vertical dos elementos que estão no nav */
+        align-items: center;
+    }
+    h1{
+        /* Alterando o Tamanho do Titulo */
+        font-size:  17pt;
+        /* alterando o tamanho da caixa(Alta ou Baixa) */
+        margin-right: 100px;
+    }
+    header h2{
+        /* Escodendo o h2 que está no cabeçalho */
+        display: none;
+    }
+    header p{
+       /* Escodendo o p que está no cabeçalho */ 
+       display: none;
+    }
+
+}
+@media(min-width:576px) and (max-width: 767px){
+    header{
+        background-image: url("../img/cafeteria2.jpg");
+        /* Ajustando o tamanho da imagem em 100% de largura */
+        background-size: 100%;
+        /* Ajustando a posição da imagem em x e y */
+        background-position: 0px -150px;
+        /* Ajustando altura da imgem */
+        height: 300px;
+        /* margem interna do elemento */
+        padding: 5px;
+    }
+}
