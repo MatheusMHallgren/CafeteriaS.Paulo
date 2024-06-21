@@ -348,7 +348,7 @@ text-align: center;
         /* Ajustando a posição da imagem em x e y */
         background-position: 0px 0px;
         /* Ajustando altura da imgem */
-        height: 300px;
+        height: 700px;
         /* margem interna do elemento */
         padding: 5px;
         background-repeat: no-repeat;
@@ -359,12 +359,21 @@ text-align: center;
         display: flex;
         /* Alinhamento vertical dos elementos que estão no nav */
         align-items: center;
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        z-index: 10000;
+        display: block;
     }
     h1{
         /* Alterando o Tamanho do Titulo */
         font-size:  17pt;
         /* alterando o tamanho da caixa(Alta ou Baixa) */
         margin-right: 100px;
+        position: absolute;
+        top: 20px;
+        right: 200px;
+
     }
     header h2{
         /* Escodendo o h2 que está no cabeçalho */
@@ -373,6 +382,21 @@ text-align: center;
     header p{
        /* Escodendo o p que está no cabeçalho */ 
        display: none;
+    }
+    main{
+        /* Imagem de fundo */
+        background-image: url("../img/café.jpg");
+        /* Alterando a opacidade da foto */
+        opacity: 0.90;
+        background-size: 100%;
+        background-position: 0px -100px; 
+        /* background-repeat: no-repeat; */
+        border-top:0px solid white;
+    }
+    header ul li{
+        display: block;
+        padding: 15px;
+        margin-top: 15px;
     }
 
 }
